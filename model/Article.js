@@ -8,6 +8,7 @@ const articleSchema = new Schema({
     time:String,
     description:String,
     tags:Array,
+    // Introduction渲染在list 不渲染在详情
     Introduction:String,
     types:String,
     content:String,

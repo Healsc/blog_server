@@ -11,7 +11,7 @@ router.post('/registUser', async (ctx) => {
 /* 获取首页推荐的几篇文章 */
 router.get('/getHomeArticle', async (ctx) => {
     const Article = mongoose.model('Article')
-    await Article.find({title:"mongoose"}).exec().then((res)=>{
+    await Article.find().limit(5).exec().then((res)=>{
         ctx.body = res
     }).catch((err)=>{
         ctx.body = err
