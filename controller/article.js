@@ -11,16 +11,29 @@ router.post('/registUser', async (ctx) => {
 /* 获取首页推荐的几篇文章 */
 router.get('/getHomeArticle', async (ctx) => {
     const Article = mongoose.model('Article')
-    await Article.find().limit(5).exec().then((res)=>{
+    await Article.find().sort({"createDate":-1}).limit(5).exec().then((res)=>{
         ctx.body = res
     }).catch((err)=>{
         ctx.body = err
     })  
-
-    
-    console.log('请求成功')
 });
 
+
+/* 获取文章详情页面 */
+router.get('/getArticleDetail', async (ctx) => {
+    const Article = mongoose.model('Article');
+    await Article.findOne({ _id:ctx.query.id}).exec().then(res => {
+        ctx.body = res;
+    })
+});
+
+/* acticle页面获取分类文章的列表 */
+router.get('/getArticleList', async (ctx) => {
+    const Article = mongoose.model('Article');
+    await Article.find({types:ctx.query.types}).exec().then(res => {
+        ctx.body = res;
+    })
+});
 
 const fs = require('fs')
 router.get('/insertArticle', async (ctx) => {
