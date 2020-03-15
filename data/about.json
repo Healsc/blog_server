@@ -1,0 +1,45 @@
+[
+    {
+        "name":"孙闯",
+        "email":"healsc@163.com",
+        "qq":"398736770",
+        "tel":"15636214551",
+        "school":"东北农业大学",
+        "schoolEN":"NEAU",
+        "major":"String",
+        "aboutMe":[
+            "东北农业大学2017级",
+            "计算机科学与技术专业"
+        ],
+        "personExperience":[
+            "大二开始接触前端",
+            "大三开始努力学习前端"
+        ],
+        "projectExperience":[
+            {
+                "title":"",
+                "content":"TESTA熟练掌握C， java， PHP， jsvaScript等单词的拼写",
+                "url":""
+            },{
+                "title":"",
+                "content":"TESTA熟练掌握C， java， PHP， jsvaScript等单词的拼写",
+                "url":""
+            },{
+                "title":"",
+                "content":"TESTB熟练掌握C， java， PHP， jsvaScript等单词的拼写",
+                "url":""
+            },
+            "",
+            "",
+            "TESTC熟练掌握C， java， PHP， jsvaScript等单词的拼写"
+        ],
+        "skill":[
+            "熟悉HTML",
+            "熟悉Css",
+            "了解HTML5",
+            "了解Css3",
+            "了解JavaScript",
+            "了解nodejs"
+        ]
+    }
+]

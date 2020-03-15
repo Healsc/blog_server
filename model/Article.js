@@ -13,7 +13,8 @@ const articleSchema = new Schema({
     types:String,
     content:String,
     articleId: Schema.Types.ObjectId,
-    createDate: { type: Date, default: Date.now() }
+    createDate: { type: Date, default: Date.now() },
+    bcImgUrl:String
 });
 
 

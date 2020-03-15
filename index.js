@@ -14,12 +14,14 @@ let article = require('./controller/article.js');
 let type = require('./controller/type.js')
 let product = require('./controller/product.js');
 let works = require('./controller/works.js');
+let about = require('./controller/about.js');
 
 let router = new Router();
 router.use('/article', article.routes());
 router.use('/type', type.routes())
 router.use('/product', product.routes());
 router.use('/works', works.routes());
+router.use('/about', about.routes());
 
 app.use(router.routes());
 app.use(router.allowedMethods());
