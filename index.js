@@ -4,7 +4,8 @@ const app = new Koa();
 // 解决跨域问题
 const cors = require('koa2-cors');
 app.use(cors({
-    origin: ['http://localhost:8080'],
+    //origin: ['http://localhost:8080'],
+    origin: 'http://localhost:8080',
     credentials: true
 }));
 
