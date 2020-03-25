@@ -3,7 +3,6 @@ const mongoose = require('mongoose')
 const db = 'mongodb://localhost/blog';
 
 
-
 // 引入 schema
 const glob = require('glob');
 const path = require('path');
